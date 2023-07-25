@@ -1,0 +1,525 @@
+:root {
+
+    /*  PRIMARY */
+    --primary-main-color: #30690B;
+    --secondary-main-color: #5E9042;
+    --secondary-second-color: #F7D528;
+    --other-color-1: #ffff;
+    --other-color-2: #0000;
+
+    /*  TYPO    */
+    --nunito-sans: 'Nunito Sans';
+}
+
+
+/*  BODY    */
+body {
+    font-family: var(--nunito-sans);
+    background-color: var(--other-color-1);
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  NAVBAR  */
+*{
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    object-fit: scale-down;
+    padding-right: 70px;
+}
+
+nav {
+    background-color: var(--primary-main-color);
+    margin: 0;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+nav ul{
+    float: left;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    position: relative;
+    color: var(--other-color-1);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--other-color-1);
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+label #btn,
+label #cancel{
+    fill: var(--other-color-1);
+    font-size: 30px;
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    background-image: linear-gradient(rgba(150, 150, 150, 0.5), rgba(160, 160, 160, 0.5)), url("cala-w6ftFbPCs9I-unsplash.jpg");
+    height: 482.86px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    color: var(--other-color-1);
+    text-align: center;
+}
+
+.hero-title {
+    font-family: var(--nunito-sans);
+    font-size: 200px;
+}
+
+.hero-description {
+    font-size: 80px;
+}
+
+/*  BELOW HERO  */
+h3 {
+    font-size: 1.9em;
+    color: var(--secondary-main-color);
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.p {
+    margin-left: 40px;
+    font-size: 1.5em;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+.accueil_core {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.RESERVEZ {
+    color: var(--other-color-1);
+    background-color: var(--secondary-main-color);
+    width: 300px;
+    height: 8%;
+    margin-left: 25%;
+    border: none;
+}
+
+.RESERVEZ:hover {
+    background-color: var(--primary-main-color);
+    color: white;
+}
+
+.img-accueil {
+    background-position: center;
+    background-size: cover;
+    margin: 80px 40px 80px 40px;
+}
+
+/*  MENU    */
+.menu_core {
+    text-align: center;
+}
+
+.p_menu {
+    font-size: 1.5em;
+    padding-top: 40px;
+    color: var(--secondary-main-color);
+}
+
+.text_menu {
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 1.3em;
+}
+
+.RESERVEZ_MENU {
+    color: var(--other-color-1);
+    background-color: var(--secondary-main-color);
+    width: 260px;
+    height: 45px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: none;
+}
+
+.RESERVEZ_MENU:hover {
+    background-color: var(--primary-main-color);
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--secondary-main-color);
+    padding-top: 40px;
+}
+
+/*  A PROPOS  */
+.a_propos_core {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+h2{
+    font-size: 2.5em;
+    color: var(--secondary-main-color);
+    margin-left: 225px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.img_a_propos {
+    height: 855px;
+    width: 650px;
+    margin-top: 110px;
+    margin-bottom: 90px;
+    margin-left: 60px;
+}
+
+.text_a_propos {
+    font-size: 1.8em;
+    margin-left: 225px;
+    margin-right: 60px;
+    margin-bottom: 90px;
+}
+
+/*  CONTACTS  */
+.contacts_core {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 80px;
+}
+
+.map {
+    margin: 70px 20px 150px 280px;
+}
+
+.icones {
+    height: 100px;
+    width: 300px;
+    object-fit: scale-down;
+}
+
+.body_contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.infos_contacts {
+    font-size: 1.75em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.next_img_contact {
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-left: 80px;
+}
+
+.RESERVEZ_CONTACTS {
+    color: var(--other-color-1);
+    background-color: var(--secondary-main-color);
+    width: 260px;
+    height: 65px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    border: none;
+}
+
+.RESERVEZ_CONTACTS:hover {
+    background-color: var(--primary-main-color);
+    color: white;
+}
+
+/*  RESERVER  */
+
+.reserver_core {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 80px;
+}
+
+form {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 6fr;
+    margin-left: 570px;
+    margin-right: 440px;
+    font-size: 1.3em;
+    gap: 15px;
+}
+
+.fill {
+    width: 300px;
+    height: 25px;
+}
+
+.email_address {
+    display: grid;
+    grid-template-rows: 2fr;
+    margin-left: 570px;
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+.email_required {
+    width: 755px;
+    height: 25px;
+    margin-left: 570px;
+    margin-top: 15px;
+}
+
+.send{
+    color: var(--other-color-1);
+    background-color: var(--secondary-main-color);
+    width: 260px;
+    height: 45px;
+    margin: 70px 0px 70px 825px;
+    border: none;
+    text-align: center;
+}
+
+.send:hover{
+    background-color: var(--primary-main-color);
+    color: white;
+}
+
+/*  FOOTER  */
+footer {
+    padding: 50px;
+    color: var(--other-color-1);
+    background-color: var(--primary-main-color);
+    display: grid;
+    gap: 60px;
+    justify-content: space-evenly;
+    grid-template-columns: 250px 250px 250px;
+    bottom: 0;
+    object-fit: scale-down;
+}
+
+/*  MEDIA QUERIES   */
+
+/*  MQ NAVBAR  */
+@media (max-width: 860px) {
+    label #btn{
+        display:block;
+        margin-left: 20px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--secondary-main-color);
+        top: 80px;
+        left: -200%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    #check:checked ~ ul{
+        left: 100%;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    .logo{
+        padding-right: 40px;
+    }
+}
+
+/*  MQ ACCUEIL */
+@media (max-width:860px) {
+    .hero-title{
+        font-size: 150px;
+        margin-left: 20px;
+    }
+    .hero-description{
+        font-size: 40px;
+    }
+    .hero-image{
+        height: 350px;
+    }
+    h3{
+        font-size: 1.3em;
+        margin-top: 40px;
+    }
+    .accueil_core{
+        display: flex;
+        flex-direction: column;
+    }
+    .p{
+        font-size: 1em;
+        padding-right: 40px;
+    }
+    .RESERVEZ{
+        margin-left: 12%;
+        height: 50px;
+    }
+    .img-accueil{
+        display: block;
+    }
+}
+
+/*  MQ MENU */
+@media (max-width:860px) {
+    .text_menu{
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 1em;
+    }
+}
+
+/*  MQ A PROPOS */
+@media (max-width:860px) {
+    .logo{
+        padding-right: 45px;
+    }
+    h2{
+        font-size: 1.5em;
+        margin-left:30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .text_a_propos{
+        font-size: 1em;
+        margin-left: 30px;
+    }
+    .a_propos_core{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img_a_propos{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 588px;
+        width: 348px;
+    }
+}
+
+/*  MQ CONTACTS */
+@media (max-width:860px) {
+    .body_contacts{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contacts_core{
+        font-size: 1.8em;
+        margin: 20px 40px 20px 25px;
+    }
+    .map{
+        width: 90%;
+        height: 16em;
+        padding: 5px;
+        margin: 13px;
+        display: inline-block;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .next_img_contact{
+        font-size: 0.6em;
+        margin: auto;
+    }
+    .p{
+        margin-left: 40px;
+    }
+    .icones{
+        padding-right: 10px;
+    }
+    .RESERVEZ_CONTACTS{
+        margin-left: 20px;
+    }
+}
+
+/*  MQ RESERVER */
+@media (max-width:860px) {
+    .logo{
+        padding-right: 50px;
+    }
+    form{
+        justify-content: center;
+        margin-left: 35%;
+        width: 20%;
+    }
+    .email_address{
+        justify-content: center;
+        margin-left: -35%;
+    }
+    .email_required{
+        justify-content: center;
+        margin-left: 15%;
+        width: 70%;
+    }
+    .send{
+        justify-content: center;
+        margin-left: 35%;
+        width: 30%;
+        font-size: 0.8em;
+    }
+}
+
+/*  MQ FOOTER  */
+@media (max-width:860px) {
+    footer{
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-content: center;
+    }
+}

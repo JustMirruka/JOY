@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant JOY</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="menu_burger">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <img src="btn.png" id="btn"></i>
+                <img src=cancel.png id="cancel"></i>
+            </label>
+        </div>
+        <ul>
+            <li><a href="accueil.html">ACCUEIL</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="a_propos.html">A PROPOS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="#">RESERVER</a></li>
+        </ul>
+        <div class="logo_nav">
+            <IMG class="logo" src="logo.png" alt="logo du restaurant JOY" />
+        </div>
+    </nav>
+    <div class="reserver_core">FORMULAIRE</div>
+    <form>
+        <!-- revealing the registration form -->
+        <label class="date" for="date">Date:</label>
+        <label class="hour" for="hour">Heure:</label>
+        <input class="fill" type="text" id="date" required />
+        <input class="fill" type="text" id="hour" required />
+
+        <label for="name">Nom:</label>
+        <label for="first-name">Prénom:</label>
+        <input class="fill" type="text" id="name" required />
+        <input class="fill" type="text" id="first-name" required />
+
+        <label for="people">Nombre de personnes:</label>
+        <label for="phone">Numéro de téléphone:</label>
+        <input class="fill" type="text" id="people" required />
+        <input class="fill" type="tel" id="phone" required />
+    </form>
+    <label class="email_address" for="email">Adresse email (optionnel):</label>
+    <input class="email_required" type="text" id="email" required />
+    <div>
+        <button class="send" type="submit">CONFIRMER</button>
+    </div>
+    <footer>
+        <div class="coordonnées">Coordonnées:
+            <p>Arbonne 64210 (France) 15 Rue de la joie</p>
+        </div>
+        <div class="horaires">Horaires:
+            <p>Du Mardi au Dimanche de 11h15 à 14h15 et de 19h15 à 22h30</p>
+        </div>
+        <div class="règlements">Règlments acceptés:
+            <p>Espèces - Cartes bancaires - Tickets restaurant</p>
+        </div>
+    </footer>
+</body>
+</html>
